@@ -38,5 +38,19 @@ sections.forEach((section, i) => {
   });
 });
 
+// mute btn
+sections.forEach(section => {
+    const video = section.querySelector('.video-container video');
+    const muteBtn = section.querySelector('.mute-btn');
+    muteBtn.addEventListener('click', () => {
+      video.muted = !video.muted;
+      if (video.muted) {
+        muteBtn.innerHTML = '<i class="fa-solid fa-volume-mute"></i>';
+      } else {
+        muteBtn.innerHTML = '<i class="fa-solid fa-volume-up"></i>';
+      }
+    });
+  });
+
 // display first section
 showSection(currentSection);
