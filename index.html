@@ -1,56 +1,67 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio ? maybe</title>
-    <link rel="stylesheet" href="assets/css/base.css">
-    <script src="https://kit.fontawesome.com/d2592aca38.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio ? maybe</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <script src="https://kit.fontawesome.com/d2592aca38.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#" data-section="0">Blopi & Blopa</a></li>
-            <li><a href="#" data-section="1">Skull & Knight</a></li>
-            <li><a href="#" data-section="2">Un-Star-Ble</a></li>
-        </ul>
-    </nav>
+  <nav>
+    <ul>
+      <li><a href="#" data-section="0">Blopi & Blopa</a></li>
+      <li><a href="#" data-section="1">Skull & Knight</a></li>
+      <li><a href="#" data-section="2">Un-Star-Ble</a></li>
+    </ul>
+  </nav>
 
-    <main>
-        <section class="project-section active">
-            <div class="video-container">
-                <video src="assets/videos/blopi-blopa.mp4" autoplay loop muted></video>
-                <button class="mute-btn"><i class="fa-solid fa-volume-mute"></i></button>
-            </div>
-            <button class="nav-arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="nav-arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
-            <h2>Blopi & Blopa</h2>
-            <p>Description du projet, etc.</p>
-        </section>
+  <main>
+    <div class="carousel-container">
+      <section class="project-section active">
+        <div class="video-container">
+          <video src="assets/videos/blopi-blopa.mp4" autoplay loop muted></video>
+          <button class="mute-btn"><i class="fa-solid fa-volume-mute"></i></button>
+          <button class="nav-arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="nav-arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </section>
 
-        <section class="project-section">
-            <div class="video-container">
-                <video src="assets/videos/skull-knight.mp4" autoplay loop muted></video>
-                <button class="mute-btn"><i class="fa-solid fa-volume-mute"></i></button>
-            </div>
-            <button class="nav-arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="nav-arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
-            <h2>Skull & Knight</h2>
-            <p>Description du projet, etc.</p>
-        </section>
+      <section class="project-section">
+        <div class="video-container">
+          <video src="assets/videos/skull-knight.mp4" autoplay loop muted></video>
+          <button class="mute-btn"><i class="fa-solid fa-volume-mute"></i></button>
+          <button class="nav-arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="nav-arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </section>
 
-        <section class="project-section">
-            <div class="video-container">
-                <video src="assets/videos/un-star-ble.mp4" autoplay loop muted></video>
-                <button class="mute-btn"><i class="fa-solid fa-volume-mute"></i></button>
-            </div>
-            <button class="nav-arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-            <button class="nav-arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
-            <h2>Un-Star-Ble</h2>
-            <p>Description du projet, etc.</p>
-        </section>
-    </main>
+      <section class="project-section">
+        <div class="video-container">
+          <video src="assets/videos/un-star-ble.mp4" autoplay loop muted></video>
+          <button class="mute-btn"><i class="fa-solid fa-volume-mute"></i></button>
+          <button class="nav-arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
+          <button class="nav-arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
+        </div>
+      </section>
+    </div>
 
-    <script src="assets/js/script.js"></script>
+    <div class="text-container">
+      <div class="text-section active">
+        <h1>Blopi & Blopa</h1>
+        <p>Description du projet, etc.</p>
+      </div>
+      <div class="text-section">
+        <h1>Skull & Knight</h1>
+        <p>Description du projet, etc.</p>
+      </div>
+      <div class="text-section">
+        <h1>Un-Star-Ble</h1>
+        <p>Description du projet, etc.</p>
+      </div>
+    </div>
+  </main>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
