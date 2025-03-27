@@ -1,0 +1,41 @@
+.download{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2rem auto;
+    padding: 1rem;
+    border: 2px solid #172A3A;
+    width: 25rem;
+}
+  
+.download button{
+    color: #fff;
+    font-family: 'Winky Sans', sans-serif;
+    font-weight: 400;
+    font-size: large;
+    background-color: #09bc8a;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    border: none;
+    transition: 0.3s ease;
+}
+  
+.download button:hover{
+    box-shadow: 0 0 10px rgba(9, 93, 188, 0.719);
+    transform: scale(1.05);
+}
+  
+.links{
+    display: flex;
+    justify-content: center;
+    margin-top: 0.5rem;
+    gap: 1rem;
+}
+.links > * {
+    font-size: 1.5rem;
+    transition: 0.3s ease;
+} 
+.links > *:hover {    
+    text-shadow: 0 0 10px rgb(9, 93, 188);
+} 

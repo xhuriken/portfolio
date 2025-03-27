@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Winky+Sans:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 @import url('nav.css');
 @import url('text.css');
+@import url('controls.css');
+@import url('download.css');
 html {
   font-size: 20px;
   height: 100%;
@@ -17,4 +20,107 @@ body {
   background-color: #11161D;
   color: #E0E0E0;
   height: 100%;
+}
+
+span {
+  font-size: 16px;
+  font-family: "Source Code Pro", monospace;
+  color: #09bc8a;
+  font-weight: 600;
+}
+
+a{
+  color: #09bc8a;
+  text-decoration: none;
+}
+
+a:hover{
+  text-decoration: underline;
+}
+
+.tooltip-multi {
+  position: relative;
+  cursor: help;
+}
+
+.tooltip-multi::after {
+  content: attr(data-title) "\A" attr(data-tooltip);
+  white-space: pre-line;
+  position: absolute;
+  bottom: 120%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.95);
+  background: #0f131a;
+  color: #E0E0E0;
+  font-size: 0.75rem;
+  font-family: "Winky Sans", sans-serif;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  max-width: 25rem;
+  min-width: 15rem;
+  text-align: left;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.2s ease, transform 0.2s ease;
+  box-shadow: 0 0 10px rgba(9, 188, 137, 0.986);
+  z-index: 20;
+}
+
+.tooltip-multi::before {
+  content: "";
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  border: 6px solid transparent;
+  border-top-color: #0f131a;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  z-index: 19;
+}
+
+.tooltip-multi:hover::after,
+.tooltip-multi:hover::before {
+  opacity: 1;
+  transform: translateX(-50%) scale(1);
+}
+
+
+.title-line {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-title {
+  position: relative;
+  display: inline-block;
+}
+
+.custom-title::after {
+  content: attr(data-after);
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  transform: translateY(-50%) translateX(0.5rem);
+  font-size: 0.8rem;
+  color: #09bc8a;
+  font-family: 'Courier New', monospace;
+  white-space: nowrap;
+}
+
+
+/* FOOTER */
+.line{
+  border-top: #09bc8a 2px solid;
+  width: 15rem;
+  margin: 1rem auto 0 auto;
+}
+
+footer{
+  padding: 1.7rem;
+  width: 100%;
+}
+
+footer p{
+  text-align: center;
 }
