@@ -1,0 +1,74 @@
+.controls {
+    margin-top: 1rem;
+    text-align: center;
+}
+
+.controls p {
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #E0E0E0;
+    font-size: 1.1rem;
+}
+
+.controls table {
+    margin: 0 auto;
+    border-collapse: collapse;
+    background-color: #0f131a;
+    border: 1px solid #172A3A;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(9, 188, 138, 0.1);
+}
+
+.controls thead th {
+    padding: 0.8rem 1.2rem;
+    color: #09bc8a;
+    font-weight: bold;
+    background-color: #11161D;
+    font-family: 'Courier New', monospace;
+    font-size: 1rem;
+    border-bottom: 1px solid #172A3A;
+}
+
+.controls td {
+    padding: 0.6rem 1rem;
+    color: #E0E0E0;
+    font-size: 0.95rem;
+    border-bottom: 1px solid #172A3A;
+}
+
+.controls tr:last-child td {
+    border-bottom: none;
+}
+
+@media (max-width: 600px) {
+    .controls table,
+    .controls thead,
+    .controls tbody,
+    .controls th,
+    .controls td,
+    .controls tr {
+        display: block;
+        width: 100%;
+    }
+
+    .controls thead {
+        display: none;
+    }
+
+    .controls td {
+        text-align: left;
+        padding-left: 50%;
+        position: relative;
+    }
+
+    .controls td::before {
+        content: attr(data-label);
+        position: absolute;
+        left: 1rem;
+        top: 0.6rem;
+        color: #09bc8a;
+        font-weight: bold;
+        font-family: 'Courier New', monospace;
+    }
+}
