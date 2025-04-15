@@ -6,71 +6,36 @@ nav {
     z-index: 1000;
     border-bottom: 2px solid #172A3A;
 }
-  
+
 nav ul {
     display: flex;
     list-style: none;
     justify-content: center;
     padding: 1rem;
 }
-  
+
 nav li {
     margin: 0 1rem;
 }
-  
+
 nav a {
     color: #09bc8a;
     text-decoration: none;
     font-weight: bold;
 }
-  
+
 nav a.active-link {
     text-decoration: underline;
 }
-  
+
 nav a:hover {
     text-decoration: underline;
-}
-  
-.carousel-container {
-    position: relative;
-    height: 80vh;
-    overflow: hidden;
-}
-  
-.project-section {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    transition: transform 0.5s ease;
-    transform: translateX(100%);
-    z-index: 0;
-}
-  
-.project-section.active {
-    transform: translateX(0);
-}
-  
-.video-container {
-    position: relative;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.video-container video {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    object-position: center;
-    display: block;
 }
 
 .mute-btn {
     position: absolute;
-    bottom: 1rem;
     right: 1rem;
+    top: 1rem;
     background-color: rgba(17, 22, 29, 0.7);
     border: none;
     color: #09bc8a;
@@ -83,6 +48,49 @@ nav a:hover {
 .mute-btn:hover {
     background-color: #09bc8a;
     color: #11161D;
+}
+
+.carousel-container {
+    display: flex;
+    flex-wrap: nowrap;
+    min-height: 100vh;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.carousel-slide {
+    flex: 0 0 auto; 
+    display: flex;
+    flex-direction: column;
+    overflow: auto;
+    background: #11161D;
+    color: #E0E0E0;
+    z-index: 1;
+}
+  
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    flex: 1 1 auto; 
+}
+
+
+.video-container {
+    position: relative;
+    width: 100%;
+    height: 80vh; 
+    background: #000;
+    overflow: hidden;
+}
+
+.video-container video {
+    width: 100%;
+    height: auto;
+    height: 100%;   
+    object-fit: cover;    
+    object-position: center;
+    display: block;
 }
 
 .nav-arrow {
@@ -107,4 +115,15 @@ nav a:hover {
 .nav-arrow:hover {
     background-color: #09bc8a;
     color: #11161D;
+}
+
+.slide-text {
+    width: 100%;
+    padding: 1rem 2rem; 
+    background: #11161D; 
+    overflow-y: auto;    
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
 }
