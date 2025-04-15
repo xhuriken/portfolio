@@ -1,19 +1,22 @@
-const imgsContainer = document.querySelector('.imgs');
-const imgs = imgsContainer.querySelectorAll('img');
+const imgsContainers = document.querySelectorAll('.imgs');
 
-const observer = new IntersectionObserver((entries, observer) => {
-  entries.forEach(entry => {
-    if (entry.isIntersecting) {
-      imgs.forEach((img, i) => {
-        setTimeout(() => {
-          img.classList.add('visible');
-        }, i * 100);
-      });
-      observer.unobserve(imgsContainer);
-    }
+imgsContainers.forEach(container => {
+  const imgs = container.querySelectorAll('img');
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        imgs.forEach((img, i) => {
+          setTimeout(() => {
+            img.classList.add('visible');
+          }, i * 100);
+        });
+        observer.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.3
   });
-}, {
-  threshold: 0.3
-});
 
-observer.observe(imgsContainer);
+  observer.observe(container);
+});
