@@ -28,7 +28,10 @@ function showSlide(index, updateHash = true) {
             link.classList.add('active-link');
         }
     });
-
+    
+    slides.forEach((slide, i) => {
+      slide.classList.toggle('active-slide', i === currentIndex);
+    });
     slides.forEach(slide => {
         const video = slide.querySelector('video');
         if (video) {
@@ -49,6 +52,8 @@ function showSlide(index, updateHash = true) {
     if (updateHash) {
         window.location.hash = `#${currentIndex}`;
     }
+
+    adaptCarouselHeightToActiveSlide();
 }
 
 navLinks.forEach(link => {
@@ -102,4 +107,47 @@ window.addEventListener('load', () => {
     } else {
         showSlide(0, false);
     }
+    adaptCarouselHeightToActiveSlide();
 });
+
+function adaptCarouselHeightToActiveSlide() {
+  const slide = slides[currentIndex];
+  const slideContent = slide.querySelector('.slide-content');
+  if (!slideContent) return;
+
+  // Cloner le contenu
+  const wrapper = document.createElement('div');
+  wrapper.style.position = 'absolute';
+  wrapper.style.visibility = 'hidden';
+  wrapper.style.width = '100vw';
+  wrapper.style.left = '0';
+  wrapper.style.top = '0';
+  wrapper.style.zIndex = '-1';
+  wrapper.style.pointerEvents = 'none';
+  wrapper.style.overflow = 'hidden';
+  wrapper.style.display = 'block';
+
+  const clone = slideContent.cloneNode(true);
+  clone.style.width = '100%';
+  clone.style.height = 'auto';
+  clone.style.transform = 'none';
+
+  // Optionnel : ajouter le footer global au clone
+  const footer = document.querySelector('footer');
+  if (footer) {
+      const footerClone = footer.cloneNode(true);
+      wrapper.appendChild(clone);
+      wrapper.appendChild(footerClone);
+  } else {
+      wrapper.appendChild(clone);
+  }
+
+  document.body.appendChild(wrapper);
+  const measuredHeight = wrapper.scrollHeight;
+  document.body.removeChild(wrapper);
+
+  const viewport = window.innerHeight;
+  carouselContainer.style.height = `${Math.max(measuredHeight-110, viewport)}px`;
+
+  console.log(`✅ Hauteur mesurée avec footer: ${measuredHeight}px`);
+}

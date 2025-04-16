@@ -53,7 +53,6 @@ nav a:hover {
 .carousel-container {
     display: flex;
     flex-wrap: nowrap;
-    min-height: 100vh;
     overflow: hidden;
     transition: transform 0.5s ease;
 }
@@ -66,6 +65,7 @@ nav a:hover {
     background: #11161D;
     color: #E0E0E0;
     z-index: 1;
+    overflow: visible;
 }
   
 .slide-content {
@@ -74,7 +74,6 @@ nav a:hover {
     width: 100%;
     flex: 1 1 auto; 
 }
-
 
 .video-container {
     position: relative;
