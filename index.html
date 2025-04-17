@@ -50,7 +50,7 @@
                     <div class="title">
                         <h1 class="custom-title" data-after="4 Avril 2025">Out of Nothing</h1>
                     </div>
-                    <span>72h, Ludume Dare 57.</span>
+                    <span>72h, Ludum Dare 57.</span>
                     <p>Sandbox incremental, experimental</p>
 
                     <div class="imgs">
@@ -254,16 +254,16 @@
 
                     <div class="imgs">
                         <img src="assets/imgs/skullknight/1.png" alt="skullknight-1" class="confetti">
-                        <img src="assets/imgs/skullknight/1.png" alt="skullknight-2" class="confetti heart">
-                        <img src="assets/imgs/skullknight/1.png" alt="skullknight-3" class="confetti">
-                        <img src="assets/imgs/skullknight/1.png" alt="skullknight-4" class="confetti">
+                        <img src="assets/imgs/skullknight/2.png" alt="skullknight-2" class="confetti heart">
+                        <img src="assets/imgs/skullknight/3.png" alt="skullknight-3" class="confetti">
+                        <img src="assets/imgs/skullknight/4.png" alt="skullknight-4" class="confetti">
                     </div>
 
                     <div class="download">
-                        <button>Download and play !</button>
+                        <!-- <button>Download and play !</button> -->
                         <div class="links">
                             <a href="https://github.com/xhuriken/DoubleKnight" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+                            <!-- <a href="#" target="_blank"><i class="fa-brands fa-itch-io"></i></a> -->
                         </div>
                     </div>
 
@@ -297,8 +297,14 @@
                             </table>
                         </div>
                     </div>                    
-                    <h4 style="text-align: center;">Ce jeu est techniquement jouable, mais il s’agit avant tout d’une démo.<br/>
+                    <h4 style="text-align: center;">Ce jeu est techniquement "jouable", mais il s’agit avant tout d’une démo.<br/>
                         L’objectif était surtout d’explorer différentes techniques et de voir jusqu’où on pouvait aller !</h4>
+                        <br>
+                        <h4 style="text-align: center;">
+                            Multijoueur oblige... il reste ENORMÉMENT de bugs visuels et de soucis de synchronisation à corriger.<br/>
+                            Le projet n’étant pas encore terminé, le jeu n’est pas téléchargeable pour le moment.
+                        </h4>
+                        
                     <br><br>
                     <h2>Techno Utilisée:</h2>
                     <br>
@@ -329,7 +335,7 @@
                             <p>Dans Unity, FMOD s’intègre via un plugin dédié. On peut lier des <span>événements sonores</span> à des actions, déclencher des <span>snapshots</span> ou moduler le son en fonction des variables du jeu (comme la vitesse du joueur, son état de santé, etc).</p>
                         </div>
                         <div class="img">
-                            <img src="assets/imgs/skullknight/1.png" alt="blopy-blopa-softbody">
+                            <img src="assets/imgs/skullknight/2.png" alt="blopy-blopa-softbody">
                         </div>
                     </div>
 
@@ -362,17 +368,41 @@
                     <p>Un "jouet".</p>
 
                     <div class="imgs">
-                        <img src="assets/imgs/skullknight/1.png" alt="ex-1" class="confetti">
-                        <img src="assets/imgs/skullknight/1.png" alt="ex-2" class="confetti heart">
-                        <img src="assets/imgs/skullknight/1.png" alt="ex-3" class="confetti">
-                        <img src="assets/imgs/skullknight/1.png" alt="ex-4" class="confetti">
+                        <img src="assets/imgs/unstarble/1.png" alt="ex-1" class="confetti">
+                        <img src="assets/imgs/unstarble/2.png" alt="ex-2" class="confetti heart">
+                        <img src="assets/imgs/unstarble/3.png" alt="ex-3" class="confetti">
+                        <img src="assets/imgs/unstarble/4.png" alt="ex-4" class="confetti">
+                    </div>
+                    
+                    <style>
+                        .unity-container {
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        max-width: 100%;
+                        overflow: hidden;
+                        width: 100%;
+                        }
+
+                        .unity-container iframe {
+                        width: 100%;
+                        max-width: 980px;
+                        aspect-ratio: 16 / 11;
+                        border: none;
+                        display: block;
+                        }
+
+
+                    </style>
+                      
+                    <div class="unity-container">
+                        <iframe src="/webglUnStarBle/index.html" loading="lazy" allowfullscreen></iframe>
                     </div>
 
                     <div class="download">
-                        <button>Download and try!</button>
+                        <!-- <button>Download and try!</button> -->
                         <div class="links">
                             <a href="https://github.com/xhuriken/Un-Star-ble" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
                         </div>
                     </div>
 
@@ -396,15 +426,25 @@
                                         <td data-label="Commande">Interagir</td>
                                         <td data-label="Clavier">Clic gauche</td>
                                     </tr>
+                                    <tr>
+                                        <td data-label="Commande">Stuck ?</td>
+                                        <td data-label="Clavier">R</td>
+                                    </tr>
                                 </tbody>
                             </table>
                         </div>
                     </div>
+
+                    <!-- <h3>Pour une version plus stable, télécharger le build : </h3> -->
+                    <!-- <br> -->
+
+
+
                     <h2>Technos utilisées :</h2>
                     <br>
                     <div class="techno">
                         <div class="img">
-                            <img src="assets/imgs/skullknight/1.png" alt="blopy-blopa-softbody">
+                            <img src="assets/imgs/unstarble/techno.png" alt="blopy-blopa-softbody">
                         </div>
                         <div class="text left">
                             <h2>Les colliders !</h2>
@@ -427,7 +467,7 @@
             <div class="slide-content">
                 <!-- PARTIE VIDEO -->
                 <div class="video-container">
-                    <video src="assets/videos/un-star-ble.mp4" autoplay loop muted></video>
+                    <video src="assets/videos/becip.mp4" autoplay loop muted></video>
                     <button class="nav-arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
                     <button class="nav-arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
                 </div>
@@ -443,7 +483,7 @@
                     <div class="information">
                         <p>Ce site a été réalisé avec le framework <span>Laravel 11.x</span> et du <span>JavaScript natif</span>.</p>
                         <p>Il s'agit d'une application web permettant la gestion et la transmission de plans en cours de création pour des chantiers.</p>
-                        <p>Fonctionnalités : gestion des utilisateurs et des fichiers, envoi d’e-mails, base de données, intégration de Cronitor, etc.</p>
+                        <p>Fonctionnalités : gestion des utilisateurs et des fichiers, envoi d’e-mails, e-mail personalisé, base de données, intégration de Cronitor, liens dynamiques, etc.</p>
                     </div>
 
                     <h4>Par souci de professionnalisme, je ne peux pas partager ce projet publiquement. Seule une "preview floutée" est disponible !</h4>

@@ -126,3 +126,32 @@ footer{
 footer p{
   text-align: center;
 }
+
+
+.pause-btn {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  background-color: rgba(17, 22, 29, 0.8);
+  border: none;
+  color: #09bc8a;
+  padding: 0.5rem;
+  width: 2.5rem;
+  cursor: pointer;
+  font-size: 1.1rem;
+  z-index: 12;
+  transition: background 0.3s ease;
+}
+.pause-btn:hover {
+  background-color: #09bc8a;
+  color: #11161D;
+}
+
+/* Mute global fixe en bas à droite de l’écran */
+#globalMuteBtn {
+  position: fixed !important;
+  bottom: 1.5rem;
+  right: 1.5rem;
+  z-index: 999;
+  top: 92vh;
+}
