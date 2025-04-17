@@ -1,506 +1,69 @@
-<!DOCTYPE html>
 <html lang="fr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio ? maybe</title>
-    <link rel="stylesheet" href="assets/css/base.css">
-    <script src="https://kit.fontawesome.com/d2592aca38.js" crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Célestin HONVAULT - About Me</title>
+  <link rel="stylesheet" href="assets/css/base.css">
+  <script src="https://kit.fontawesome.com/d2592aca38.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <nav>
-        <ul>
-            <li><a href="#0" data-section="0">Out of Nothing</a></li>
-            <li><a href="#1" data-section="1">Blopy & Blopa</a></li>
-            <li><a href="#2" data-section="2">Skull & Knight</a></li>
-            <li><a href="#3" data-section="3">Un-Star-Ble</a></li>
-            <li><a href="#4" data-section="4">Becip</a></li>
-        </ul>
 
-        <button class="mute-btn" id="globalMuteBtn">
-            <i class="fa-solid fa-volume-mute"></i>
-        </button>
+        <div class="nav-left">
+            <a href="index.html" class="about-link">About Me</a>
+          </div>
+        <ul>
+            <li><a href="projects.html#0" data-section="0">Out of Nothing</a></li>
+            <li><a href="projects.html#1" data-section="1">Blopy & Blopa</a></li>
+            <li><a href="projects.html#2" data-section="2">Skull & Knight</a></li>
+            <li><a href="projects.html#3" data-section="3">Un-Star-Ble</a></li>
+            <li><a href="projects.html#4" data-section="4">Becip</a></li>
+        </ul>
     </nav>
 
-    <div class="carousel-container" id="carouselContainer">
-        
-        <!-- Out of Nothing -->
-        <!-- Out of Nothing -->
-        <!-- Out of Nothing -->
-        <!-- Out of Nothing -->
-        <!-- Out of Nothing -->
-        <!-- Out of Nothing -->
+  <header>
+    <h1 class="main-title">Célestin HONVAULT</h1>
+    <p class="tagline">Développeur full-stack curieux, passionné par les jeux vidéo, l'interaction et la création d'univers.</p>
+  </header>
 
-        <section class="carousel-slide" data-slide="0">
-            <div class="slide-content">
-                <!-- PARTIE VIDEO -->
-                <div class="video-container">
-                    <video src="assets/videos/out-of-nothing.mp4" autoplay loop muted></video>
-                    <!-- Flèches G / D -->
-                    <button class="nav-arrow left-arrow">
-                        <i class="fa-solid fa-arrow-left"></i>
-                    </button>
-                    <button class="nav-arrow right-arrow">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </button>
-                </div>
-                
-                <!-- PARTIE TEXTE -->
-                <div class="slide-text">
-                    <div class="title">
-                        <h1 class="custom-title" data-after="4 Avril 2025">Out of Nothing</h1>
-                    </div>
-                    <span>72h, Ludum Dare 57.</span>
-                    <p>Sandbox incremental, experimental</p>
+  <section class="download">
+    <button onclick="window.open('assets/cv.pdf', '_blank')">
+        <i class="fa-solid fa-file"></i> Télécharger mon CV
+    </button>
 
-                    <div class="imgs">
-                        <img src="assets/imgs/outofnothing/1.png" alt="blopy-blopa-1" class="confetti">
-                        <img src="assets/imgs/outofnothing/2.png" alt="blopy-blopa-2" class="confetti heart">
-                        <img src="assets/imgs/outofnothing/3.png" alt="blopy-blopa-3" class="confetti">
-                        <img src="assets/imgs/outofnothing/4.png" alt="blopy-blopa-3" class="confetti">
-                    </div>
-
-                    <div class="download">
-                        <button onclick="window.open('https://xhuriken.itch.io/out-of-nothing', '_blank')">
-                            Download and play !
-                        </button>
-                        <div class="links">
-                            <a href="https://github.com/xhuriken/LD57" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <a href="https://xhuriken.itch.io/out-of-nothing" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="information">
-                        <p>Out of Nothing est un jeu bac à sable incrémental où vous créez votre propre expérience à partir de rien, en augmentant votre score à partir d'une simple balle.</p>
-                        <p>Dans ce monde, le Rien est roi, et seule votre imagination peut combler le vide.</p>
-                        <div class="controls">
-                            <p>Controles:</p>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Commande</th>
-                                        <th>Clavier / Souris</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-label="Commande">Interagir</td>
-                                        <td data-label="Clavier">Clic gauche</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Commande">Déplacer</td>
-                                        <td data-label="Clavier">Clic droit</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Commande">Craft (Pas EarlyGame)</td>
-                                        <td data-label="Clavier">Espace</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Commande">Molette</td>
-                                        <td data-label="Clavier">Zoom/DeZoom</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Commande">Molette + Déplacer</td>
-                                        <td data-label="Clavier">Bouger la camera</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                    <h2>Allez voir le itch.io ;)</h2>
-                </div>
-            </div>
-        </section>
-
-        <!-- blopy & Blopa -->
-        <!-- blopy & Blopa -->
-        <!-- blopy & Blopa -->
-        <!-- blopy & Blopa -->
-        <!-- blopy & Blopa -->
-
-        <section class="carousel-slide" data-slide="1">
-            <div class="slide-content">
-                <!-- PARTIE VIDEO -->
-                <div class="video-container">
-                    <video src="assets/videos/blopy-blopa.mp4" autoplay loop muted></video>
-                    <button class="nav-arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="nav-arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-
-                <!-- PARTIE TEXTE -->
-                <div class="slide-text">
-                    <div class="title">
-                        <h1 class="custom-title" data-after="Février 2025">Blopy &amp; Blopa</h1>
-                    </div>
-                    <span>4 jours consécutifs.</span>
-                    <p>Jeu local à deux joueurs, exploration, énigmes, fuuuuun !</p>
-
-                    <div class="imgs">
-                        <img src="assets/imgs/blopyblopa/1.png" alt="blopy-blopa-1" class="confetti">
-                        <img src="assets/imgs/blopyblopa/2.png" alt="blopy-blopa-2" class="confetti heart">
-                        <img src="assets/imgs/blopyblopa/3.png" alt="blopy-blopa-3" class="confetti">
-                        <img src="assets/imgs/blopyblopa/4.png" alt="blopy-blopa-3" class="confetti">
-                    </div>
-
-                    <div class="download">
-                        <a href="assets/builds/Blopy-Blopa.zip" download>
-                            <button>Download and play !</button>
-                        </a>
-                        <div class="links">
-                            <a href="https://github.com/xhuriken/Blop" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <!-- <a href="#" target="_blank"><i class="fa-brands fa-itch-io"></i></a> -->
-                        </div>
-                    </div>
-
-                    <div class="information">
-                        <p>Blopy &amp; Blopa est un jeu 2D réalisé sur Unity en 4 jours consécutifs dans le cadre d'une semaine gaming en école.</p>
-                        <p>Nécessite 2 périphériques (manette/manette, clavier/manette) pour un gameplay local.</p>
-                        <p><span>Votre mission :</span> rendre heureux Blopy &amp; Blopa en les amenant jusqu'au bout de la caverne.</p>
-                        <div class="controls">
-                            <p>Controles:</p>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Commande</th>
-                                        <th>Manette</th>
-                                        <th>Clavier</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-label="Commande">Déplacement</td>
-                                        <td data-label="Manette">Joystick Gauche</td>
-                                        <td data-label="Clavier">ZQSD / Flèche</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Commande">Grossir</td>
-                                        <td data-label="Manette">A / RT</td>
-                                        <td data-label="Clavier">Espace, Click Gauche</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <h2>Techno Utilisée:</h2>
-                    <br>
-                    <div class="techno">
-                        <div class="img">
-                            <img src="assets/imgs/blopyblopa/softbody.png" alt="blopy-blopa-softbody">
-                        </div>
-                        <div class="text left">
-                            <h2>Soft Body - <a href="https://www.youtube.com/watch?v=3OmkehAJoyo">
-                                <i class="fa-brands fa-youtube fa-xs"></i></a>
-                                <a href="https://www.youtube.com/watch?v=h_bSGoztB2g">
-                                <i class="fa-brands fa-youtube fa-xs"></i></a>
-                            </h2>
-                            <p>Les personnages ne sont pas de simples <span>Circle Collider</span>, ce sont des <span>Soft Body</span>.</p>
-                            <p>Un objet composé de plusieurs autres objets, reliés entre eux.</p>
-                            <p>
-                                Dans mon cas, un <span>GameObject</span> "Joueur" contient <span>14</span> autres points.
-                                Chaque point est relié avec des <span class="tooltip-multi"
-                                      data-title="Unity Doc : "
-                                      data-tooltip="The Spring Joint joins two Rigidbodies together but allows the distance between them to change as though they were connected by a spring.">
-                                      Spring Joints <i class="fa-regular fa-circle-question fa-2xs"></i></span>
-                                aux 14 autres, et tous sont reliés au point central "Joueur".
-                            </p>
-                            <p>Pour se déplacer, on applique une vélocité au point central. Les autres points suivent, plus ou moins bien, car ils sont reliés par cette force de ressort.</p>
-                            <p>Pour grossir, on agrandit tous les <span>Spring Joints</span> d’un coefficient *x* en même temps.</p>
-                            <p>C’est ce qui définit leur espacement : les <span>Spring Joints</span> agissent comme des ressorts, donnant cet aspect "Slime".</p>
-                        </div>
-                    </div>
-                    <div class="techno">
-                        <div class="text right">
-                            <h2>Autres :</h2>
-                            <p>Utilisation de <span class="tooltip-multi"
-                              data-title="Unity Doc : "
-                              data-tooltip="The Universal Render Pipeline
-(URP) is a prebuilt Scriptable Render Pipeline, made by Unity. URP provides artist-friendly workflows that let you quickly and easily create optimized graphics across a range of platforms, from mobile to high-end consoles and PCs">URP <i class="fa-regular fa-circle-question fa-2xs"></i></span>
-                                pour les lumières.
-                            </p>
-                            <p><span>Input System</span> pour la gestion des périphériques manette et clavier.</p>
-                            <p>Et... Unity quoi :)</p>
-                        </div>
-                        <div class="img">
-                            <img src="assets/imgs/blopyblopa/URP.png" alt="blopy-blopa-softbody">
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Skull & Knight -->
-        <!-- Skull & Knight -->
-        <!-- Skull & Knight -->
-        <!-- Skull & Knight -->
-        <!-- Skull & Knight -->
-
-        <section class="carousel-slide" data-slide="2">
-            <div class="slide-content">
-                <!-- PARTIE VIDEO -->
-                <div class="video-container">
-                    <video src="assets/videos/skull-knight.mp4" autoplay loop muted></video>
-                    <button class="nav-arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="nav-arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-
-                <!-- PARTIE TEXTE -->
-                <div class="slide-text">
-                    <div class="title">
-                        <h1 class="custom-title" data-after="Novembre 2024 - Now">Skull &amp; Knight</h1>
-                    </div>
-                    <span>5 mois en temps libre.</span>
-                    <p>Jeu coop à deux en ligne (Steam/Mirror), et local ! Metroidvania 2D, pixel Art.</p>
-
-                    <div class="imgs">
-                        <img src="assets/imgs/skullknight/1.png" alt="skullknight-1" class="confetti">
-                        <img src="assets/imgs/skullknight/2.png" alt="skullknight-2" class="confetti heart">
-                        <img src="assets/imgs/skullknight/3.png" alt="skullknight-3" class="confetti">
-                        <img src="assets/imgs/skullknight/4.png" alt="skullknight-4" class="confetti">
-                    </div>
-
-                    <div class="download">
-                        <!-- <button>Download and play !</button> -->
-                        <div class="links">
-                            <a href="https://github.com/xhuriken/DoubleKnight" target="_blank"><i class="fa-brands fa-github"></i></a>
-                            <!-- <a href="#" target="_blank"><i class="fa-brands fa-itch-io"></i></a> -->
-                        </div>
-                    </div>
-
-                    <div class="information">
-                        <p>Skull &amp; Knight est un gros projet Unity Multijoueur. Les Sprites sont dessinés à la main sur <span>Asesprite</span> par <a href="https://www.linkedin.com/in/matheobeaudetcf/?original_referer=https%3A%2F%2Fwww%2Egoogle%2Ecom%2F&originalSubdomain=fr">Mathéo BEAUDET</a></p>
-                        <p>Deux joueur, Le skull avec son bouclier qui peut parer, servir de plateforme, et protéger. Et le Knight avec son épée qui peut attaquer.</p>
-                        <p>Nécessite 2 PC (Avec deux comptes Steam en Ami). Gameplay clavier/manette.</p>
-                        <p><span>Votre mission :</span> Explorer et combattre en s'aidant l'un l'autre.</p>
-                        <div class="controls">
-                            <p>Controles:</p>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Commande</th>
-                                        <th>Manette</th>
-                                        <th>Clavier</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-label="Commande">Déplacement</td>
-                                        <td data-label="Manette">Joystick Gauche</td>
-                                        <td data-label="Clavier">ZQSD / Flèche</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Commande">Grossir</td>
-                                        <td data-label="Manette">A / RT</td>
-                                        <td data-label="Clavier">Espace, Click Gauche</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>                    
-                    <h4 style="text-align: center;">Ce jeu est techniquement "jouable", mais il s’agit avant tout d’une démo.<br/>
-                        L’objectif était surtout d’explorer différentes techniques et de voir jusqu’où on pouvait aller !</h4>
-                        <br>
-                        <h4 style="text-align: center;">
-                            Multijoueur oblige... il reste ENORMÉMENT de bugs visuels et de soucis de synchronisation à corriger.<br/>
-                            Le projet n’étant pas encore terminé, le jeu n’est pas téléchargeable pour le moment.
-                        </h4>
-                        
-                    <br><br>
-                    <h2>Techno Utilisée:</h2>
-                    <br>
-                    <div class="techno">
-                        <div class="img">
-                            <img src="assets/imgs/skullknight/1.png" alt="blopy-blopa-softbody">
-                        </div>
-                        <div class="text left">
-                            <h2>Mirror -
-                                <a href="https://www.youtube.com/watch?v=8tKFF0RP9Jw">
-                                    <i class="fa-brands fa-youtube fa-xs"></i>
-                                </a>
-                            </h2>
-                            <p><span>Mirror</span> est une solution <span>open-source</span> de networking pour Unity.</p>
-                            <p>Permettant d’implémenter du multijoueur dans les projets Unity. Elle repose sur une architecture client-serveur (comme UNet à l’époque), où le serveur est l’autorité principale, et les clients synchronisent leur état à travers le réseau.</p>
-                            <p>Grâce à des attributs comme <span>[SyncVar]</span> et des appels <span>Command</span>/<span>ClientRpc</span>, on peut synchroniser des variables, envoyer des ordres ou déclencher des événements côté client ou serveur.</p>
-                        </div>
-                    </div>
-                    <div class="techno">
-                        <div class="text right">
-                            <h2>FMOD -
-                                <a href="https://youtu.be/rcBHIOjZDpk">
-                                    <i class="fa-brands fa-youtube fa-xs"></i>
-                                </a>
-                            </h2>
-                            <p><span>FMOD</span> est une solution audio professionnelle, utilisée dans de nombreux jeux vidéo pour créer des systèmes sonores dynamiques et interactifs.</p>
-                            <p>Elle permet de concevoir des ambiances complexes, d'intégrer des effets en temps réel, de mixer les sons selon des paramètres de gameplay, ou encore de gérer des transitions musicales sans coupure.</p>
-                            <p>Dans Unity, FMOD s’intègre via un plugin dédié. On peut lier des <span>événements sonores</span> à des actions, déclencher des <span>snapshots</span> ou moduler le son en fonction des variables du jeu (comme la vitesse du joueur, son état de santé, etc).</p>
-                        </div>
-                        <div class="img">
-                            <img src="assets/imgs/skullknight/2.png" alt="blopy-blopa-softbody">
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-
-        <!-- Un-Star-Ble -->
-        <!-- Un-Star-Ble -->
-        <!-- Un-Star-Ble -->
-        <!-- Un-Star-Ble -->
-        <!-- Un-Star-Ble -->
-        <!-- Un-Star-Ble -->
-
-        <section class="carousel-slide" data-slide="3">
-            <div class="slide-content">
-                <!-- PARTIE VIDEO -->
-                <div class="video-container">
-                    <video src="assets/videos/un-star-ble.mp4" autoplay loop muted></video>
-                    <button class="nav-arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="nav-arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-
-                <!-- PARTIE TEXTE -->
-                <div class="slide-text">
-                    <div class="title">
-                        <h1 class="custom-title" data-after="Mars 2025">Un-Star-Ble</h1>
-                    </div>
-                    <span>Défi de 8h</span>
-                    <p>Un "jouet".</p>
-
-                    <div class="imgs">
-                        <img src="assets/imgs/unstarble/1.png" alt="ex-1" class="confetti">
-                        <img src="assets/imgs/unstarble/2.png" alt="ex-2" class="confetti heart">
-                        <img src="assets/imgs/unstarble/3.png" alt="ex-3" class="confetti">
-                        <img src="assets/imgs/unstarble/4.png" alt="ex-4" class="confetti">
-                    </div>
-                    
-                    <style>
-                        .unity-container {
-                        display: flex;
-                        justify-content: center;
-                        align-items: center;
-                        max-width: 100%;
-                        overflow: hidden;
-                        width: 100%;
-                        }
-
-                        .unity-container iframe {
-                        width: 100%;
-                        max-width: 980px;
-                        aspect-ratio: 16 / 11;
-                        border: none;
-                        display: block;
-                        }
-
-
-                    </style>
-                      
-                    <div class="unity-container">
-                        <iframe src="/webglUnStarBle/index.html" loading="lazy" allowfullscreen></iframe>
-                    </div>
-
-                    <div class="download">
-                        <!-- <button>Download and try!</button> -->
-                        <div class="links">
-                            <a href="https://github.com/xhuriken/Un-Star-ble" target="_blank"><i class="fa-brands fa-github"></i></a>
-                        </div>
-                    </div>
-
-                    <div class="information">
-                        <p>Ce jeu est une reproduction de celui de <a href="https://raivk.itch.io">Thomas LEBRUN</a> :
-                           <a href="https://raivk.itch.io/un-star-ble">Un-Star-Ble</a>.</p>
-                        <p>En tant que Product Owner du Master à la Coding Factory, il propose un exercice d’une journée de 8h pour recréer ce jeu le plus fidèlement possible.</p>
-                        <p>Il m’a transmis cet exercice, et voici ce que j’ai pu réaliser en 8h !</p>
-                        <p><span>Votre mission :</span> Explorer l’espace !</p>
-                        <div class="controls">
-                            <p>Contrôles :</p>
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Commande</th>
-                                        <th>Clavier</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td data-label="Commande">Interagir</td>
-                                        <td data-label="Clavier">Clic gauche</td>
-                                    </tr>
-                                    <tr>
-                                        <td data-label="Commande">Stuck ?</td>
-                                        <td data-label="Clavier">R</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-
-                    <!-- <h3>Pour une version plus stable, télécharger le build : </h3> -->
-                    <!-- <br> -->
-
-
-
-                    <h2>Technos utilisées :</h2>
-                    <br>
-                    <div class="techno">
-                        <div class="img">
-                            <img src="assets/imgs/unstarble/techno.png" alt="blopy-blopa-softbody">
-                        </div>
-                        <div class="text left">
-                            <h2>Les colliders !</h2>
-                            <p><span>Les colliders</span> dans Unity, c’est super cool ! Mais ça consomme…</p>
-                            <p>Alors, le but dans ce projet est : ne pas les utiliser !</p>
-                            <p>L’intégralité des collisions, des distances et des clics sont calculées à l’aide de formules, et gérées manuellement, sans passer par les collider 2D d'Unity !</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Becip -->
-        <!-- Becip -->
-        <!-- Becip -->
-        <!-- Becip -->
-        <!-- Becip -->
-
-        <section class="carousel-slide" data-slide="4">
-            <div class="slide-content">
-                <!-- PARTIE VIDEO -->
-                <div class="video-container">
-                    <video src="assets/videos/becip.mp4" autoplay loop muted></video>
-                    <button class="nav-arrow left-arrow"><i class="fa-solid fa-arrow-left"></i></button>
-                    <button class="nav-arrow right-arrow"><i class="fa-solid fa-arrow-right"></i></button>
-                </div>
-
-                <!-- PARTIE TEXTE -->
-                <div class="slide-text">
-                    <div class="title">
-                        <h1 class="custom-title" data-after="2024 - 2025">Becip</h1>
-                    </div>
-                    <span>Projet web en alternance pour l'entreprise <a href="https://www.becip.com/">Becip</a></span>
-                    <p>Projet privé</p>
-
-                    <div class="information">
-                        <p>Ce site a été réalisé avec le framework <span>Laravel 11.x</span> et du <span>JavaScript natif</span>.</p>
-                        <p>Il s'agit d'une application web permettant la gestion et la transmission de plans en cours de création pour des chantiers.</p>
-                        <p>Fonctionnalités : gestion des utilisateurs et des fichiers, envoi d’e-mails, e-mail personalisé, base de données, intégration de Cronitor, liens dynamiques, etc.</p>
-                    </div>
-
-                    <h4>Par souci de professionnalisme, je ne peux pas partager ce projet publiquement. Seule une "preview floutée" est disponible !</h4>
-                    <br>
-                </div>
-            </div>
-        </section>
-
+    <div class="links">
+        <a href="https://github.com/xhuriken/" target="_blank"><i class="fa-brands fa-github"></i></a>
+        <a href="https://xhuriken.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
+        <a href="www.linkedin.com/in/célestin-honvault" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="" target="_blank"><i class="fa-brands fa-discord"></i></a>
     </div>
+  </section>
 
+  <section class="other-projects">
+    <h2>Autres projets</h2>
+    <ul class="project-list">
+      <li>
+        <h3>Mini Puzzle Platformer</h3>
+        <p>Un prototype Unity 2D fait en une journée pour tester les contrôles personnalisés et la physique.</p>
+      </li>
+      <li>
+        <h3>Note & Draw</h3>
+        <p>Application web pour dessiner et prendre des notes en ligne, en temps réel avec WebSockets.</p>
+      </li>
+      <li>
+        <h3>Bot Discord "Music & Mood"</h3>
+        <p>Bot qui réagit aux humeurs des utilisateurs et propose des playlists adaptées.</p>
+      </li>
+      <li>
+        <h3>Calculateur d'impôts</h3>
+        <p>Petit outil en ligne pour faire des estimations d'impôts français personnalisées.</p>
+      </li>
+    </ul>
+  </section>
+
+  <footer>
     <div class="line"></div>
-    <footer>
-        <p>Célestin HONVAULT © 2025 - Portfolioooo</p>
-    </footer>
-<script src="assets/js/section.js"></script>
-<script src="assets/js/bounceImage.js"></script>
-<script src="assets/js/confetti.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@tsparticles/confetti@3.0.3/tsparticles.confetti.bundle.min.js"></script>
+    <p>Célestin HONVAULT &copy; 2025 - Portfolioooo</p>
+  </footer>
 </body>
 </html>
