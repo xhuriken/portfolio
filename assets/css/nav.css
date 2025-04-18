@@ -77,7 +77,6 @@ nav a:hover {
     display: flex;
     flex-direction: column;
     overflow: auto;
-    background: #11161D;
     color: #E0E0E0;
     z-index: 1;
     overflow: visible;
@@ -134,7 +133,6 @@ nav a:hover {
 .slide-text {
     width: 100%;
     padding: 1rem 2rem; 
-    background: #11161D; 
     overflow-y: auto;    
     align-items: center;
     display: flex;

@@ -1,68 +1,138 @@
+<!DOCTYPE html>
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Célestin HONVAULT - About Me</title>
   <link rel="stylesheet" href="assets/css/base.css">
+  <link rel="stylesheet" href="assets/css/about.css">
+  <link rel="icon" type="image/x-icon" href="assets/imgs/favicon.ico">
   <script src="https://kit.fontawesome.com/d2592aca38.js" crossorigin="anonymous"></script>
 </head>
 <body>
-    <nav>
+  <nav>
+    <div class="nav-left">
+      <a href="index.html" class="about-link">About Me</a>
+    </div>
+    <ul>
+      <li><a href="projects.html#0" data-section="0">Out of Nothing</a></li>
+      <li><a href="projects.html#1" data-section="1">Blopy & Blopa</a></li>
+      <li><a href="projects.html#2" data-section="2">Skull & Knight</a></li>
+      <li><a href="projects.html#3" data-section="3">Un-Star-Ble</a></li>
+      <li><a href="projects.html#4" data-section="4">Becip</a></li>
+    </ul>
+  </nav>
 
-        <div class="nav-left">
-            <a href="index.html" class="about-link">About Me</a>
-          </div>
-        <ul>
-            <li><a href="projects.html#0" data-section="0">Out of Nothing</a></li>
-            <li><a href="projects.html#1" data-section="1">Blopy & Blopa</a></li>
-            <li><a href="projects.html#2" data-section="2">Skull & Knight</a></li>
-            <li><a href="projects.html#3" data-section="3">Un-Star-Ble</a></li>
-            <li><a href="projects.html#4" data-section="4">Becip</a></li>
-        </ul>
-    </nav>
-
-  <header>
-    <h1 class="main-title">Célestin HONVAULT</h1>
-    <p class="tagline">Développeur full-stack curieux, passionné par les jeux vidéo, l'interaction et la création d'univers.</p>
-  </header>
-
-  <section class="download">
-    <button onclick="window.open('assets/cv.pdf', '_blank')">
+  <section class="hero">
+    <div class="intro">
+      <h1 class="main-title">Célestin HONVAULT</h1>
+      <p class="tagline">
+        Développeur <span class="tooltip-multi w-5"
+        data-title="Les cycliste dirons : "
+        data-tooltip="'Tout Terrain'">
+        TT <i class="fa-regular fa-circle-question fa-2xs"></i></span> full-stack , Gamejam enjoyer !
+      </p>
+    </div>
+    <div class="download">
+      <button onclick="window.open('assets/cv.pdf','_blank')">
         <i class="fa-solid fa-file"></i> Télécharger mon CV
-    </button>
-
-    <div class="links">
+      </button>
+      <div class="links">
         <a href="https://github.com/xhuriken/" target="_blank"><i class="fa-brands fa-github"></i></a>
         <a href="https://xhuriken.itch.io/" target="_blank"><i class="fa-brands fa-itch-io"></i></a>
-        <a href="www.linkedin.com/in/célestin-honvault" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="" target="_blank"><i class="fa-brands fa-discord"></i></a>
+        <a href="https://www.linkedin.com/in/célestin-honvault" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="#" title="Discord copié !" onclick="navigator.clipboard.writeText('xhuriken')">
+          <i class="fa-brands fa-discord"></i>
+        </a>
+      </div>
     </div>
+  </section>
+
+  <section class="projects-preview">
+    <h2>À propos de moi</h2>
+    <p>
+        Un jour, quelqu'un m'a comparé à un couteau suisse.
+    </p>
+  </section>
+
+  <section class="skills-section">
+    <h2>Compétences</h2>
+    <p class="friendly-intro">
+      Des jolis geauge de compétence ? Voici une alternative plus claire : un tableau de mes langages et plateformes, avec le nombre de projets associés !
+    </p>
+    <!-- oui j'ai la flemme jvais mettre un br vide y'a quoi maintenant hein ?? -->
+    <br> 
+    <ul class="project-list skills-list">
+      <li><h3>JavaScript</h3><p><span>6</span> projets</p></li>
+      <li><h3>HTML & CSS</h3><p><span>10</span> projets</p></li>
+      <li><h3>SQL</h3><p><span>5</span> projets</p></li>
+      <li><h3>PHP</h3><p><span>4</span> projets</p></li>
+      <li><h3>Laravel</h3><p><span>2</span> projets</p></li>
+      <li><h3>Unity</h3><p><span>7</span> projets</p></li>
+      <li><h3>Unreal Engine</h3><p><span>1</span> projet</p></li>
+      <li><h3>C# / WPF</h3><p><span>15</span> projets</p></li>
+      <li><h3>Python</h3><p><span>5</span> projets</p></li>
+      <li><h3>Rpi & Arduino</h3><p><span>3</span> projets</p></li>
+      <li><h3>C++</h3><p><span>2</span> projets</p></li>
+      <li><h3>Lua</h3><p><span>3</span> projets</p></li>
+      <li><h3>Java</h3><p><span>5</span> projets</p></li>
+      <li><h3>Spigot</h3><p><span>4</span> projets</p></li>
+      <li><h3>Android</h3><p><span>4</span> projets</p></li>
+      <li><h3>Linux CLI / Debian</h3><p><span>5</span> projets</p></li>
+    </ul>
+  </section>
+
+  <section class="projects-preview">
+    <h2>Mes plus beaux projets !</h2>
+    <p>
+      Pour les découvrir, vous pouvez cliquer <a>la</a>, ahah nan je rigole, juste <a href="projects.html">ici</a> :)
+    </p>
   </section>
 
   <section class="other-projects">
     <h2>Autres projets</h2>
     <ul class="project-list">
       <li>
-        <h3>Mini Puzzle Platformer</h3>
-        <p>Un prototype Unity 2D fait en une journée pour tester les contrôles personnalisés et la physique.</p>
+        <h3>Bubble Chield</h3>
+        <p>Jeu 2D pour la Global GameJam en Janvier 2025. 48h, Theme bulle.</p>
       </li>
       <li>
-        <h3>Note & Draw</h3>
-        <p>Application web pour dessiner et prendre des notes en ligne, en temps réel avec WebSockets.</p>
+        <h3>OBSWebsocket WPF</h3>
+        <p>Application C# communiquant avec OBS par websocket pour piloté celui-ci. Pause, Rec, Save... Pour l'entreprise Mov'x</p>
       </li>
       <li>
-        <h3>Bot Discord "Music & Mood"</h3>
-        <p>Bot qui réagit aux humeurs des utilisateurs et propose des playlists adaptées.</p>
+        <h3>OBSWebsocket WPF</h3>
+        <p>Application C# communiquant avec OBS par websocket pour piloté celui-ci. Pause, Rec, Save... Pour l'entreprise Mov'x</p>
       </li>
       <li>
-        <h3>Calculateur d'impôts</h3>
-        <p>Petit outil en ligne pour faire des estimations d'impôts français personnalisées.</p>
+        <h3>OBSWebsocket WPF</h3>
+        <p>Application C# communiquant avec OBS par websocket pour piloté celui-ci. Pause, Rec, Save... Pour l'entreprise Mov'x</p>
+      </li>
+      <li>
+        <h3>OBSWebsocket WPF</h3>
+        <p>Application C# communiquant avec OBS par websocket pour piloté celui-ci. Pause, Rec, Save... Pour l'entreprise Mov'x</p>
+      </li>
+      <li>
+        <h3>OBSWebsocket WPF</h3>
+        <p>Application C# communiquant avec OBS par websocket pour piloté celui-ci. Pause, Rec, Save... Pour l'entreprise Mov'x</p>
+      </li>
+      <li>
+        <h3>OBSWebsocket WPF</h3>
+        <p>Application C# communiquant avec OBS par websocket pour piloté celui-ci. Pause, Rec, Save... Pour l'entreprise Mov'x</p>
+      </li>
+      <li>
+        <h3>OBSWebsocket WPF</h3>
+        <p>Application C# communiquant avec OBS par websocket pour piloté celui-ci. Pause, Rec, Save... Pour l'entreprise Mov'x</p>
+      </li>
+      <li>
+        <h3>OBSWebsocket WPF</h3>
+        <p>Application C# communiquant avec OBS par websocket pour piloté celui-ci. Pause, Rec, Save... Pour l'entreprise Mov'x</p>
       </li>
     </ul>
   </section>
 
+  <div class="line"></div>
   <footer>
-    <div class="line"></div>
     <p>Célestin HONVAULT &copy; 2025 - Portfolioooo</p>
   </footer>
 </body>
